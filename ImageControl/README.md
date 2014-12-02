@@ -14,10 +14,14 @@ Include CustomImageRenderer.cs in your Android Project (iOS to come at a future 
 
 
 In your xaml files you can host an image like so:
+
+```
 <common:ImageControl  WidthRequest="76" HeightRequest="76" ImageUrl="http://yourhost.com/yourimage.jpg" />
+```
 
 This was originally needed to work well in a ListView e.g.
-	
+
+```
 <ListView Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Images}">
 	<ListView.ItemTemplate>
 		<DataTemplate>
@@ -37,6 +41,7 @@ This was originally needed to work well in a ListView e.g.
 		</DataTemplate>
 	</ListView.ItemTemplate>
 </ListView>
+```
 
 It is by no means currently a fully tested implementation but I hope you find it useful.
 
